@@ -4,12 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>KB Enterprises | Surface Coating & Industrial Solutions</title>
+<title>KB Enterprises | Surface Coating & Material Handling Solutions</title>
 
-<meta name="description"
-content="KB Enterprises - Powder Coating Machines, Surface Cleaning Machines, Material Handling Conveyors, Painting Equipment, Machine Maintenance, Electrical and Hardware Goods.">
+<meta name="description" content="KB Enterprises provides industrial solutions for powder coating, pre-treatment, painting, conveyors and material handling systems in Ludhiana, Punjab.">
+
+<meta name="theme-color" content="#b5121b">
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -22,9 +24,9 @@ html{
 
 body{
     font-family:Arial,Helvetica,sans-serif;
-    color:#17233b;
+    color:#20252b;
     background:#fff;
-    line-height:1.7;
+    line-height:1.6;
 }
 
 a{
@@ -32,702 +34,1014 @@ a{
     color:inherit;
 }
 
+img{
+    max-width:100%;
+    display:block;
+}
+
 .container{
-    width:90%;
-    max-width:1180px;
+    width:min(1180px,92%);
     margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
     position:sticky;
     top:0;
-    z-index:9999;
+    z-index:1000;
     background:#fff;
-    box-shadow:0 3px 18px rgba(0,0,0,.10);
+    border-bottom:1px solid #eee;
+    box-shadow:0 2px 15px rgba(0,0,0,.05);
 }
 
 .nav{
-    min-height:88px;
+    height:78px;
     display:flex;
     align-items:center;
     justify-content:space-between;
     gap:25px;
 }
 
-.logo{
-    font-size:30px;
-    font-weight:900;
-    color:#101f3b;
-    line-height:1;
-}
-
-.logo span{
-    color:#e30613;
-}
-
-.logo small{
-    display:block;
-    font-size:9px;
-    letter-spacing:2px;
-    color:#555;
-    margin-top:7px;
-}
-
-nav{
+.brand{
     display:flex;
     align-items:center;
-    gap:28px;
-    font-weight:700;
+    gap:12px;
+    min-width:190px;
 }
 
-nav a{
-    color:#0d1d3b;
-    transition:.2s;
+.brand-mark{
+    width:48px;
+    height:48px;
+    border-radius:8px;
+    background:#b5121b;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    font-size:20px;
+    font-weight:900;
 }
 
-nav a:hover{
-    color:#e30613;
+.brand strong{
+    font-size:21px;
+    letter-spacing:.5px;
+}
+
+.brand span{
+    display:block;
+    font-size:10px;
+    color:#777;
+    letter-spacing:1.5px;
+    margin-top:-3px;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:24px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.menu a{
+    color:#333;
+    transition:.25s;
+}
+
+.menu a:hover{
+    color:#b5121b;
+}
+
+.actions{
+    display:flex;
+    align-items:center;
+    gap:9px;
 }
 
 .btn{
-    display:inline-block;
-    background:#e30613;
-    color:#fff!important;
-    padding:12px 24px;
-    border-radius:28px;
-    font-weight:800;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
+    padding:12px 18px;
+    font-weight:700;
+    font-size:13px;
+    border:1px solid transparent;
+    transition:.25s;
+    cursor:pointer;
 }
 
-.btn.dark{
-    background:#252e3d;
+.btn-red{
+    background:#b5121b;
+    color:#fff;
 }
 
-/* ================= HERO ================= */
+.btn-red:hover{
+    background:#8f0d15;
+    transform:translateY(-1px);
+}
+
+.btn-dark{
+    background:#20252b;
+    color:#fff;
+}
+
+.btn-dark:hover{
+    background:#000;
+    transform:translateY(-1px);
+}
+
+.mobile-toggle{
+    display:none;
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* HERO */
 
 .hero{
-    min-height:620px;
+    min-height:650px;
+    display:flex;
+    align-items:center;
 
     background:
     linear-gradient(
         90deg,
-        rgba(10,25,47,.94),
-        rgba(10,25,47,.72),
-        rgba(10,25,47,.30)
+        rgba(10,13,17,.92) 0%,
+        rgba(10,13,17,.78) 48%,
+        rgba(10,13,17,.35) 100%
     ),
-    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=85");
 
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
+    url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
 }
 
 .hero-content{
-    max-width:780px;
-    color:white;
-    padding:90px 0;
-}
-
-.kicker{
-    color:#e30613;
-    font-weight:800;
-    letter-spacing:3px;
-    text-transform:uppercase;
-    margin-bottom:12px;
-}
-
-.hero .kicker{
-    color:#ff3131;
-}
-
-.hero h1{
-    font-size:clamp(45px,6vw,72px);
-    line-height:1.08;
-    margin-bottom:25px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#eef2f7;
-    max-width:720px;
-    margin-bottom:32px;
-}
-
-/* ================= COMMON ================= */
-
-.section{
-    padding:90px 0;
-}
-
-.section.light{
-    background:#f4f6fa;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:55px;
-}
-
-.section-title h2{
-    font-size:48px;
-    line-height:1.15;
-    text-transform:uppercase;
-    color:#14213d;
-}
-
-.section-title p{
-    color:#657086;
-    max-width:750px;
-    margin:12px auto 0;
-    font-size:17px;
-}
-
-/* ================= ABOUT ================= */
-
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:55px;
-    align-items:center;
-}
-
-.about-images{
-    display:grid;
-    gap:10px;
-}
-
-.about-image{
-    height:220px;
-    border-radius:5px;
-    overflow:hidden;
-    background-size:cover;
-    background-position:center;
-}
-
-.about-image.one{
-    background-image:url("https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85");
-}
-
-.about-image.two{
-    background-image:url("https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=1000&q=85");
-}
-
-.experience{
-    background:#ff1111;
     color:#fff;
-    display:inline-block;
-    padding:18px 28px;
-    font-size:26px;
+    max-width:720px;
+    padding:90px 0;
+}
+
+.eyebrow{
+    font-size:12px;
+    letter-spacing:3px;
     font-weight:800;
-    margin-bottom:25px;
-}
-
-.about-content h2{
-    font-size:45px;
-    line-height:1.15;
-    margin-bottom:20px;
-}
-
-.about-content h2 span{
-    color:#e30613;
-    text-decoration:underline;
-}
-
-.about-content p{
-    color:#59677c;
-    font-size:17px;
-    margin-bottom:18px;
-}
-
-.about-tabs{
-    display:flex;
-    gap:30px;
-    margin-top:25px;
-    font-weight:800;
-}
-
-.about-tabs span:first-child{
-    color:#e30613;
-}
-
-/* ================= STRENGTH ================= */
-
-.strength-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap:28px;
-}
-
-.strength-card{
-    background:#fff;
-    border-radius:15px;
-    min-height:270px;
-    padding:35px 28px;
-    text-align:center;
-    box-shadow:0 8px 30px rgba(20,33,61,.08);
-    transition:.3s;
-}
-
-.strength-card:hover{
-    transform:translateY(-6px);
-}
-
-.strength-card .icon{
-    font-size:52px;
-    color:#e30613;
+    color:#e45b61;
     margin-bottom:15px;
 }
 
-.strength-card h3{
-    font-size:27px;
-    margin-bottom:12px;
+.hero h1{
+    font-size:clamp(40px,6vw,70px);
+    line-height:1.05;
+    margin-bottom:22px;
 }
 
-.strength-card p{
-    color:#59677c;
-    font-size:17px;
+.hero p{
+    font-size:18px;
+    max-width:650px;
+    color:#e5e5e5;
+    margin-bottom:30px;
 }
 
-/* ================= BUSINESSES ================= */
+.hero-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
 
-.businesses{
-    background:#f1f4f9;
+.btn-outline{
+    border-color:#fff;
+    color:#fff;
+    background:transparent;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#20252b;
+}
+
+/* SECTION */
+
+section{
+    padding:90px 0;
+}
+
+.section-head{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 48px;
+}
+
+.section-head .eyebrow{
+    color:#b5121b;
+}
+
+.section-head h2{
+    font-size:clamp(30px,4vw,46px);
+    line-height:1.15;
+    margin-bottom:15px;
+}
+
+.section-head p{
+    color:#6a7076;
+}
+
+/* STRENGTH */
+
+.strength-layout{
+    display:grid;
+    grid-template-columns:1.05fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.image-stack{
+    position:relative;
+    min-height:520px;
+}
+
+.image-main{
+    position:absolute;
+    left:0;
+    top:0;
+    width:82%;
+    height:390px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.image-small{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:52%;
+    height:250px;
+    object-fit:cover;
+    border:10px solid #fff;
+    border-radius:8px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.image-badge{
+    position:absolute;
+    left:8%;
+    bottom:38px;
+    background:#b5121b;
+    color:#fff;
+    padding:20px 24px;
+    border-radius:6px;
+    font-weight:800;
+    box-shadow:0 10px 30px rgba(181,18,27,.25);
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #e8e8e8;
+    border-radius:8px;
+    padding:28px;
+    transition:.25s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    background:#fff0f1;
+    color:#b5121b;
+    font-size:22px;
+    margin-bottom:16px;
+}
+
+.card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+
+.card p{
+    font-size:14px;
+    color:#6c7075;
+}
+
+/* BUSINESS */
+
+.business-section{
+    background:#f6f7f8;
 }
 
 .business-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:30px;
+    gap:22px;
 }
 
 .business-card{
-    height:540px;
-    border-radius:7px;
+    height:420px;
+    border-radius:8px;
     overflow:hidden;
     position:relative;
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items:flex-end;
+    color:#fff;
+    background:#222;
 }
 
-.business-card:nth-child(1){
-    background-image:
-    linear-gradient(0deg,rgba(10,20,38,.94),rgba(10,20,38,.05)),
-    url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=85");
+.business-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
 }
 
-.business-card:nth-child(2){
-    background-image:
-    linear-gradient(0deg,rgba(10,20,38,.94),rgba(10,20,38,.05)),
-    url("https://images.unsplash.com/photo-1565600221263-3a3c75a42d2c?auto=format&fit=crop&w=1000&q=85");
+.business-card:hover img{
+    transform:scale(1.06);
 }
 
-.business-card:nth-child(3){
-    background-image:
-    linear-gradient(0deg,rgba(10,20,38,.94),rgba(10,20,38,.05)),
-    url("https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=85");
+.business-overlay{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        0deg,
+        rgba(0,0,0,.9),
+        rgba(0,0,0,.08) 65%
+    );
 }
 
 .business-content{
-    color:#fff;
-    padding:38px;
+    position:absolute;
+    left:25px;
+    right:25px;
+    bottom:24px;
+}
+
+.business-content span{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#ffb2b6;
+    font-weight:800;
 }
 
 .business-content h3{
-    font-size:27px;
+    font-size:23px;
     line-height:1.2;
-    margin-bottom:12px;
+    margin:8px 0 10px;
 }
 
-.read-more{
-    font-size:18px;
+.business-content p{
+    font-size:13px;
+    color:#ddd;
 }
 
-/* ================= PRODUCTS ================= */
+.arrow{
+    display:inline-block;
+    margin-top:14px;
+    color:#fff;
+    font-weight:800;
+}
+
+/* ABOUT */
+
+.about{
+    background:#fff;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:65px;
+    align-items:center;
+}
+
+.about-images{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.about-images img{
+    height:250px;
+    width:100%;
+    object-fit:cover;
+    border-radius:7px;
+}
+
+.about-images img:first-child{
+    height:350px;
+}
+
+.about-images img:last-child{
+    margin-top:70px;
+    height:300px;
+}
+
+.about-copy .eyebrow{
+    text-align:left;
+}
+
+.about-copy h2{
+    font-size:clamp(32px,4vw,48px);
+    line-height:1.1;
+    margin-bottom:18px;
+}
+
+.about-copy p{
+    color:#666;
+    margin-bottom:17px;
+}
+
+.tabs{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.tab{
+    padding:11px 15px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.tab.active{
+    background:#b5121b;
+    color:#fff;
+    border-color:#b5121b;
+}
+
+/* PRODUCTS */
 
 .products{
+    background:#f6f7f8;
+}
+
+.product-grid{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:24px;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
 }
 
 .product{
     background:#fff;
-    border:1px solid #e4e7ec;
-    border-radius:14px;
-    padding:30px;
-    min-height:270px;
-    transition:.3s;
+    border-radius:7px;
+    overflow:hidden;
+    border:1px solid #eee;
 }
 
-.product:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
+.product-img{
+    height:190px;
+    overflow:hidden;
 }
 
-.product-number{
-    color:#e30613;
-    font-weight:900;
-    font-size:14px;
+.product-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.4s;
 }
 
-.product h3{
-    font-size:24px;
-    margin:8px 0 15px;
+.product:hover img{
+    transform:scale(1.05);
 }
 
-.product ul{
-    padding-left:20px;
-    color:#657086;
+.product-body{
+    padding:19px;
 }
 
-.product li{
-    margin:5px 0;
+.product-body h3{
+    font-size:17px;
+    margin-bottom:7px;
 }
 
-/* ================= OUR STRENGTH ================= */
+.product-body p{
+    font-size:13px;
+    color:#70757a;
+}
 
-.strength-two{
+.product-body a{
+    display:inline-block;
+    margin-top:12px;
+    color:#b5121b;
+    font-size:12px;
+    font-weight:800;
+}
+
+/* QUALITY */
+
+.quality{
+    background:#20252b;
+    color:#fff;
+}
+
+.quality .section-head p{
+    color:#bfc3c7;
+}
+
+.quality-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:#42474c;
+    border:1px solid #42474c;
 }
 
-.strength-box{
-    background:#17233b;
-    color:white;
-    border-radius:15px;
-    padding:40px;
+.quality-box{
+    background:#20252b;
+    padding:35px 25px;
+    text-align:center;
 }
 
-.strength-box h3{
+.quality-number{
     font-size:30px;
-    margin-bottom:15px;
+    font-weight:900;
+    color:#e45b61;
+    margin-bottom:10px;
 }
 
-.strength-box p{
-    color:#d9e0eb;
+.quality-box h3{
+    margin-bottom:8px;
 }
 
-/* ================= CONTACT ================= */
+.quality-box p{
+    font-size:13px;
+    color:#bfc3c7;
+}
+
+/* PROCESS */
+
+.process-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:15px;
+}
+
+.process{
+    position:relative;
+    padding:28px 20px;
+    background:#fff;
+    border:1px solid #e7e7e7;
+    border-radius:7px;
+}
+
+.process-num{
+    font-size:12px;
+    font-weight:900;
+    color:#b5121b;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.process h3{
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+.process p{
+    font-size:13px;
+    color:#70757a;
+}
+
+/* CTA */
+
+.cta{
+    padding:65px 0;
+    background:
+    linear-gradient(
+        90deg,
+        #b5121b,
+        #8f0d15
+    );
+    color:#fff;
+}
+
+.cta-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.cta h2{
+    font-size:clamp(27px,4vw,42px);
+    line-height:1.15;
+    margin-bottom:8px;
+}
+
+.cta p{
+    color:#ffdfe1;
+}
+
+.cta .btn{
+    background:#fff;
+    color:#20252b;
+}
+
+/* CONTACT */
 
 .contact{
-    background:#101d35;
-    color:#fff;
-}
-
-.contact .section-title h2{
-    color:#fff;
-}
-
-.contact .section-title p{
-    color:#cbd4e2;
+    background:#f6f7f8;
 }
 
 .contact-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:1fr 1.25fr;
     gap:35px;
 }
 
 .contact-card{
-    background:rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:15px;
+    background:#fff;
+    border:1px solid #e5e5e5;
+    border-radius:8px;
     padding:35px;
 }
 
 .contact-card h3{
-    font-size:28px;
-    margin-bottom:22px;
+    font-size:24px;
+    margin-bottom:20px;
 }
 
 .contact-item{
-    margin:18px 0;
-    color:#dfe5ee;
+    display:flex;
+    gap:15px;
+    margin:20px 0;
+}
+
+.contact-item .icon{
+    flex:none;
+    margin:0;
+    width:42px;
+    height:42px;
 }
 
 .contact-item strong{
     display:block;
-    color:#fff;
-    margin-bottom:3px;
+    font-size:13px;
+    color:#777;
+    margin-bottom:2px;
 }
 
-.contact-item a{
-    color:#fff;
+.contact-item a,
+.contact-item span{
+    font-size:15px;
+    font-weight:700;
 }
 
-.contact-item a:hover{
-    color:#ff3131;
+.contact-form{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
 }
 
-/* ================= FOOTER ================= */
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    border:1px solid #ddd;
+    padding:14px;
+    border-radius:5px;
+    font:inherit;
+    outline:none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#b5121b;
+}
+
+.contact-form textarea{
+    grid-column:1/-1;
+    min-height:145px;
+    resize:vertical;
+}
+
+.contact-form .full{
+    grid-column:1/-1;
+}
+
+/* FOOTER */
 
 footer{
-    background:#091224;
-    color:#bfc8d8;
-    padding:25px 0;
+    background:#171a1e;
+    color:#c6c9cc;
+    padding:60px 0 20px;
 }
 
-.footer{
+.footer-grid{
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+    gap:40px;
+}
+
+footer h3{
+    color:#fff;
+    font-size:16px;
+    margin-bottom:18px;
+}
+
+footer p,
+footer li,
+footer a{
+    font-size:13px;
+}
+
+footer ul{
+    list-style:none;
+}
+
+footer li{
+    margin:10px 0;
+}
+
+footer a:hover{
+    color:#fff;
+}
+
+.footer-brand{
+    color:#fff;
+    font-size:22px;
+    font-weight:900;
+    margin-bottom:12px;
+}
+
+.footer-bottom{
+    border-top:1px solid #30343a;
+    margin-top:40px;
+    padding-top:18px;
     display:flex;
     justify-content:space-between;
-    gap:20px;
+    gap:15px;
+    font-size:12px;
 }
 
-/* ================= WHATSAPP ================= */
+/* FLOATING BUTTONS */
 
 .whatsapp{
     position:fixed;
-    right:25px;
-    bottom:25px;
-    width:62px;
-    height:62px;
-    border-radius:50%;
-    background:#25d366;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:30px;
-    z-index:9999;
-    box-shadow:0 7px 25px rgba(0,0,0,.25);
-}
-
-/* ================= TOP BUTTON ================= */
-
-.top{
-    position:fixed;
-    right:25px;
-    bottom:100px;
+    right:22px;
+    bottom:22px;
     width:55px;
     height:55px;
     border-radius:50%;
-    border:2px solid #e30613;
-    background:#fff;
-    color:#e30613;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    z-index:9998;
+    background:#25d366;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    font-size:25px;
+    z-index:999;
+    box-shadow:0 7px 20px rgba(0,0,0,.2);
 }
 
-/* ================= MOBILE ================= */
+.top{
+    position:fixed;
+    right:22px;
+    bottom:88px;
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#b5121b;
+    color:#fff;
+    display:grid;
+    place-items:center;
+    z-index:999;
+    font-weight:900;
+}
 
-@media(max-width:900px){
+/* RESPONSIVE */
 
-    nav{
+@media(max-width:1050px){
+
+    .menu{
+        gap:14px;
+    }
+
+    .actions .btn-dark{
         display:none;
     }
 
-    .nav{
-        min-height:75px;
+    .product-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .hero{
-        min-height:560px;
+    .process-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+}
+
+@media(max-width:850px){
+
+    .mobile-toggle{
+        display:block;
     }
 
-    .about,
-    .contact-grid,
-    .strength-two{
+    .menu,
+    .actions{
+        display:none;
+    }
+
+    .nav.open .menu{
+        display:flex;
+        position:absolute;
+        left:0;
+        right:0;
+        top:78px;
+        background:#fff;
+        padding:20px;
+        flex-direction:column;
+        align-items:flex-start;
+        border-top:1px solid #eee;
+        box-shadow:0 15px 25px rgba(0,0,0,.08);
+    }
+
+    .strength-layout,
+    .about-grid,
+    .contact-grid{
         grid-template-columns:1fr;
     }
 
-    .business-grid,
-    .products,
-    .strength-grid{
+    .business-grid{
         grid-template-columns:1fr 1fr;
     }
 
-    .section-title h2{
-        font-size:38px;
+    .quality-grid{
+        grid-template-columns:1fr 1fr;
     }
 
+    .cta-inner{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
 
 @media(max-width:600px){
 
-    .container{
-        width:92%;
-    }
-
-    .business-grid,
-    .products,
-    .strength-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:43px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .section{
+    section{
         padding:65px 0;
     }
 
-    .section-title h2{
-        font-size:32px;
+    .hero{
+        min-height:590px;
     }
 
-    .about-content h2{
-        font-size:34px;
+    .hero p{
+        font-size:16px;
     }
 
-    .experience{
-        font-size:21px;
+    .image-stack{
+        min-height:430px;
     }
 
-    .about-tabs{
+    .image-main{
+        height:330px;
+    }
+
+    .image-small{
+        height:205px;
+    }
+
+    .cards,
+    .business-grid,
+    .product-grid,
+    .quality-grid,
+    .process-grid,
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .about-images img:first-child,
+    .about-images img:last-child{
+        height:250px;
+        margin-top:0;
+    }
+
+    .contact-form{
+        grid-template-columns:1fr;
+    }
+
+    .contact-form textarea,
+    .contact-form .full{
+        grid-column:auto;
+    }
+
+    .footer-bottom{
         flex-direction:column;
-        gap:8px;
     }
 
-    .footer{
-        flex-direction:column;
-        text-align:center;
+    .brand strong{
+        font-size:18px;
     }
-
 }
+
 </style>
 </head>
 
-<body>
-
-<!-- ================= HEADER ================= -->
+<body id="top">
 
 <header>
 
-<div class="container nav">
+<div class="container nav" id="nav">
 
-<a href="#home" class="logo">
-    KB <span>ENTERPRISES</span>
-    <small>SURFACE COATING SOLUTIONS</small>
+<a class="brand" href="#home">
+
+<div class="brand-mark">
+KB
+</div>
+
+<div>
+<strong>KB ENTERPRISES</strong>
+<span>INDUSTRIAL SOLUTIONS</span>
+</div>
+
 </a>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About us</a>
-    <a href="#products">Product Range</a>
-    <a href="#testing">Testing Equipment</a>
-    <a href="#strength">Our Strength</a>
-    <a href="#contact">Contact</a>
+<button class="mobile-toggle" onclick="toggleMenu()" aria-label="Open menu">
+☰
+</button>
 
-    <a class="btn" href="tel:+91885878771">
-        ☎ Contact
-    </a>
+<nav class="menu">
 
-    <a class="btn dark" href="#contact">
-        👤 Join Our Team
-    </a>
+<a href="#home">Home</a>
+
+<a href="#about">About Us</a>
+
+<a href="#businesses">Businesses</a>
+
+<a href="#products">Product Range</a>
+
+<a href="#quality">Quality</a>
+
+<a href="#strength">Our Strength</a>
+
+<a href="#contact">Contact</a>
+
 </nav>
+
+<div class="actions">
+
+<a class="btn btn-red" href="#contact">
+Contact Us
+</a>
+
+<a class="btn btn-dark" href="https://wa.me/918858787771" target="_blank">
+WhatsApp
+</a>
+
+</div>
 
 </div>
 
 </header>
 
+<main>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
-<section id="home" class="hero">
+<section class="hero" id="home">
 
-<div class="container hero-content">
+<div class="container">
 
-<div class="kicker">
-    Leading Industrial Solutions
+<div class="hero-content">
+
+<div class="eyebrow">
+KB ENTERPRISES
 </div>
 
 <h1>
-    Advanced Surface Finishing & Industrial Solutions
+Surface Coating &amp; Material Handling Solutions
 </h1>
 
 <p>
-    KB Enterprises provides reliable solutions for surface cleaning,
-    powder coating, painting, material handling, machine maintenance,
-    electrical and industrial hardware requirements.
+Reliable industrial solutions for powder coating,
+pre-treatment, painting, conveyors and material handling applications.
 </p>
 
-<a href="#products" class="btn">
-    Explore Products
+<div class="hero-buttons">
+
+<a class="btn btn-red" href="#products">
+Explore Products
 </a>
 
-<a href="#contact" class="btn dark">
-    Contact Us
+<a class="btn btn-outline" href="#contact">
+Get In Touch
 </a>
 
 </div>
-
-</section>
-
-
-<!-- ================= ABOUT ================= -->
-
-<section id="about" class="section">
-
-<div class="container about">
-
-<div class="about-images">
-
-<div class="experience">
-    Industrial Experience
-</div>
-
-<div class="about-image one"></div>
-
-<div class="about-image two"></div>
-
-</div>
-
-
-<div class="about-content">
-
-<div class="kicker">
-    KB Enterprises
-</div>
-
-<h2>
-    Growing Demand of
-    <span>Surface Finishing Solutions</span>
-</h2>
-
-<p>
-    KB Enterprises is engaged in providing industrial solutions
-    related to surface cleaning, surface coating, powder coating
-    equipment, material handling systems and industrial machinery.
-</p>
-
-<p>
-    Our focus is to provide practical, reliable and customized
-    solutions according to customer requirements and production
-    applications.
-</p>
-
-<p>
-    We also deal in machine maintenance services, electrical goods
-    and industrial hardware products required for machinery and
-    manufacturing environments.
-</p>
-
-<div class="about-tabs">
-    <span>Valuable Solutions</span>
-    <span>Construction Capability</span>
-    <span>Rapid Completion</span>
-</div>
-
-<p>
-    Our team works with customers to understand their requirements
-    and provide suitable machinery, equipment and industrial
-    solutions.
-</p>
 
 </div>
 
@@ -735,137 +1049,117 @@ footer{
 
 </section>
 
+<!-- STRENGTH -->
 
-<!-- ================= KEY STRENGTHS ================= -->
-
-<section id="strength" class="section light">
+<section id="strength">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-head">
 
-<div class="kicker">
-    Our Strength
+<div class="eyebrow">
+WHAT WE DO
 </div>
 
 <h2>
-    Our Key Strengths At A Glance
+Our Key Strengths At A Glance
 </h2>
 
 <p>
-    Our solutions are focused on quality, reliability,
-    practical application and customer requirements.
+We combine practical industrial solutions with customer-focused service
+to support coating and manufacturing requirements.
 </p>
 
 </div>
 
+<div class="strength-layout">
 
-<div class="strength-grid">
+<div class="image-stack">
 
-<div class="strength-card">
+<img
+class="image-main"
+src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=1000&q=85"
+alt="Industrial manufacturing">
+
+<img
+class="image-small"
+src="https://images.unsplash.com/photo-1581092918484-8313d0b7b8a3?auto=format&fit=crop&w=800&q=85"
+alt="Industrial equipment">
+
+<div class="image-badge">
+QUALITY • RELIABILITY • SERVICE
+</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
 
 <div class="icon">
-    ⇧
+✓
 </div>
 
 <h3>
-    Caring The Trust
+Quality Focus
 </h3>
 
 <p>
-    Building long-term customer relationships through
-    reliable products, services and support.
+Reliable products and solutions designed for practical industrial use.
 </p>
 
 </div>
 
-
-<div class="strength-card">
+<div class="card">
 
 <div class="icon">
-    ⦿
+★
 </div>
 
 <h3>
-    Capability
+Customer Oriented
 </h3>
 
 <p>
-    Providing industrial surface finishing and
-    material handling solutions.
+Solutions are planned around application,
+production needs and available space.
 </p>
 
 </div>
 
-
-<div class="strength-card">
+<div class="card">
 
 <div class="icon">
-    ↗
+⚙
 </div>
 
 <h3>
-    Stable
+Technical Solutions
 </h3>
 
 <p>
-    Stable and dependable industrial solutions
-    for manufacturing requirements.
+Support for surface preparation, powder coating,
+painting and material handling.
 </p>
 
 </div>
 
-
-<div class="strength-card">
+<div class="card">
 
 <div class="icon">
-    ⇧
+↗
 </div>
 
 <h3>
-    KB Solutions
+Reliable Support
 </h3>
 
 <p>
-    Providing valuable solutions according to
-    customer applications and requirements.
+Responsive assistance with a focus on long-term
+customer relationships.
 </p>
 
 </div>
-
-
-<div class="strength-card">
-
-<div class="icon">
-    ⚙
-</div>
-
-<h3>
-    Quality Focus
-</h3>
-
-<p>
-    Focus on practical equipment and reliable
-    industrial performance.
-</p>
-
-</div>
-
-
-<div class="strength-card">
-
-<div class="icon">
-    ✓
-</div>
-
-<h3>
-    Customer Support
-</h3>
-
-<p>
-    Assistance for machinery, maintenance and
-    industrial equipment requirements.
-</p>
 
 </div>
 
@@ -875,80 +1169,576 @@ footer{
 
 </section>
 
+<!-- BUSINESSES -->
 
-<!-- ================= OUR BUSINESSES ================= -->
-
-<section class="section businesses">
+<section class="business-section" id="businesses">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-head">
 
-<div class="kicker">
-    Leading
+<div class="eyebrow">
+OUR BUSINESSES
 </div>
 
 <h2>
-    Our Businesses
+Industrial Solutions For Modern Manufacturing
 </h2>
 
-</div>
+<p>
+From surface preparation to coating and material movement,
+KB Enterprises offers solutions for different production requirements.
+</p>
 
+</div>
 
 <div class="business-grid">
 
+<article class="business-card">
 
-<div class="business-card">
+<img
+src="https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&fit=crop&w=1000&q=85"
+alt="Surface preparation system">
 
-<div class="business-content">
-
-<h3>
-    PRE TREATMENT PLANTS &
-    SURFACE CLEANING SOLUTIONS
-</h3>
-
-<div class="read-more">
-    → Read More
-</div>
-
-</div>
-
-</div>
-
-
-<div class="business-card">
+<div class="business-overlay"></div>
 
 <div class="business-content">
 
+<span>
+01 / SURFACE PREPARATION
+</span>
+
 <h3>
-    POWDER COATING &
-    LIQUID PAINTING PLANTS
-    WITH ACCESSORIES
+Pre-Treatment &amp; Surface Cleaning Systems
 </h3>
 
-<div class="read-more">
-    → Read More
-</div>
+<p>
+Solutions for cleaning and preparing components
+before painting or powder coating.
+</p>
+
+<a class="arrow" href="#products">
+Explore →
+</a>
 
 </div>
 
-</div>
+</article>
 
+<article class="business-card">
 
-<div class="business-card">
+<img
+src="https://images.unsplash.com/photo-1565600222268-4a6e5d9e0e9e?auto=format&fit=crop&w=1000&q=85"
+alt="Industrial coating equipment">
+
+<div class="business-overlay"></div>
 
 <div class="business-content">
 
+<span>
+02 / COATING
+</span>
+
 <h3>
-    MATERIAL HANDLING &
-    HEAVY FABRICATION
+Powder Coating &amp; Liquid Painting Systems
 </h3>
 
-<div class="read-more">
-    → Read More
+<p>
+Industrial equipment and systems focused on
+efficient coating operations.
+</p>
+
+<a class="arrow" href="#products">
+Explore →
+</a>
+
+</div>
+
+</article>
+
+<article class="business-card">
+
+<img
+src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=1000&q=85"
+alt="Material handling equipment">
+
+<div class="business-overlay"></div>
+
+<div class="business-content">
+
+<span>
+03 / MATERIAL HANDLING
+</span>
+
+<h3>
+Conveyors &amp; Material Handling Systems
+</h3>
+
+<p>
+Practical material movement solutions for
+manufacturing and coating lines.
+</p>
+
+<a class="arrow" href="#products">
+Explore →
+</a>
+
+</div>
+
+</article>
+
 </div>
 
 </div>
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div class="about-images">
+
+<img
+src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85"
+alt="Industrial worker">
+
+<img
+src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=900&q=85"
+alt="Industrial facility">
+
+<img
+src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=900&q=85"
+alt="Industrial machinery">
+
+</div>
+
+
+<div class="about-copy">
+
+<div class="eyebrow">
+ABOUT KB ENTERPRISES
+</div>
+
+<h2>
+Industrial Solutions Built Around Your Requirements
+</h2>
+
+<p>
+KB Enterprises is engaged in providing industrial solutions
+for surface coating, powder coating, painting and material
+handling applications.
+</p>
+
+<p>
+Our objective is to provide dependable products and practical
+solutions that help industries improve production processes,
+finishing quality and material movement.
+</p>
+
+<p>
+We understand that every manufacturing setup has different
+requirements. Our approach is therefore focused on understanding
+the application and providing suitable solutions according to
+production requirements, available space and operational needs.
+</p>
+
+
+<div class="tabs">
+
+<span class="tab active">
+Valuable Solutions
+</span>
+
+<span class="tab">
+Technical Approach
+</span>
+
+<span class="tab">
+Customer Support
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products" id="products">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">
+PRODUCT RANGE
+</div>
+
+<h2>
+Our Industrial Product Range
+</h2>
+
+<p>
+Equipment and systems for coating, painting, surface preparation
+and material handling applications.
+</p>
+
+</div>
+
+
+<div class="product-grid">
+
+
+<!-- PRODUCT 1 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?auto=format&fit=crop&w=700&q=80"
+alt="Powder coating machine">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Powder Coating Machines
+</h3>
+
+<p>
+Equipment for industrial powder coating applications.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 2 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=700&q=80"
+alt="Powder coating plant">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Powder Coating Plants
+</h3>
+
+<p>
+Complete coating solutions for production requirements.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 3 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80"
+alt="Pre treatment system">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Pre-Treatment Systems
+</h3>
+
+<p>
+Surface cleaning and preparation solutions.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 4 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1565043666747-69f6646db940?auto=format&fit=crop&w=700&q=80"
+alt="Curing oven">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Curing Ovens
+</h3>
+
+<p>
+Heating and curing solutions for coating processes.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 5 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1586864387789-628af9feed72?auto=format&fit=crop&w=700&q=80"
+alt="Painting booth">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Painting Booths
+</h3>
+
+<p>
+Solutions for industrial liquid painting applications.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 6 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&w=700&q=80"
+alt="Industrial conveyor">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Industrial Conveyors
+</h3>
+
+<p>
+Material movement systems for production lines.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 7 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1516939884455-1445c8652f83?auto=format&fit=crop&w=700&q=80"
+alt="Material handling">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Material Handling Systems
+</h3>
+
+<p>
+Practical solutions for moving components efficiently.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+<!-- PRODUCT 8 -->
+
+<article class="product">
+
+<div class="product-img">
+
+<img
+src="https://images.unsplash.com/photo-1581092918484-8313d0b7b8a3?auto=format&fit=crop&w=700&q=80"
+alt="Industrial accessories">
+
+</div>
+
+<div class="product-body">
+
+<h3>
+Industrial Accessories
+</h3>
+
+<p>
+Supporting equipment and accessories for coating systems.
+</p>
+
+<a href="#contact">
+Enquire →
+</a>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- QUALITY -->
+
+<section class="quality" id="quality">
+
+<div class="container">
+
+<div class="section-head">
+
+<div class="eyebrow">
+OUR APPROACH
+</div>
+
+<h2>
+Quality &amp; Performance
+</h2>
+
+<p>
+Our solutions are selected and developed with attention
+to practical industrial requirements.
+</p>
+
+</div>
+
+
+<div class="quality-grid">
+
+
+<div class="quality-box">
+
+<div class="quality-number">
+01
+</div>
+
+<h3>
+Quality
+</h3>
+
+<p>
+Reliable products and components for industrial applications.
+</p>
+
+</div>
+
+
+<div class="quality-box">
+
+<div class="quality-number">
+02
+</div>
+
+<h3>
+Performance
+</h3>
+
+<p>
+Solutions designed around actual production requirements.
+</p>
+
+</div>
+
+
+<div class="quality-box">
+
+<div class="quality-number">
+03
+</div>
+
+<h3>
+Safety
+</h3>
+
+<p>
+Focus on dependable and responsible equipment operation.
+</p>
+
+</div>
+
+
+<div class="quality-box">
+
+<div class="quality-number">
+04
+</div>
+
+<h3>
+Service
+</h3>
+
+<p>
+Responsive assistance for product and application requirements.
+</p>
 
 </div>
 
@@ -960,209 +1750,114 @@ footer{
 </section>
 
 
-<!-- ================= PRODUCT RANGE ================= -->
+<!-- WORKING PROCESS -->
 
-<section id="products" class="section">
+<section>
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-head">
 
-<div class="kicker">
-    Product Range
+<div class="eyebrow">
+HOW WE WORK
 </div>
 
 <h2>
-    Our Industrial Solutions
+A Simple, Customer-Focused Process
 </h2>
 
 <p>
-    Industrial machinery, coating systems, conveyors,
-    maintenance and related products.
+We start with your requirement and work toward
+a practical industrial solution.
 </p>
 
 </div>
 
 
-<div class="products">
+<div class="process-grid">
 
 
-<div class="product">
+<div class="process">
 
-<div class="product-number">
-    01
+<div class="process-num">
+STEP 01
 </div>
 
 <h3>
-    Powder Coating Machines
+Requirement
 </h3>
 
-<ul>
-<li>Powder coating equipment</li>
-<li>Powder coating systems</li>
-<li>Coating line solutions</li>
-<li>Industrial coating applications</li>
-</ul>
+<p>
+Understand your application and production needs.
+</p>
 
 </div>
 
 
-<div class="product">
+<div class="process">
 
-<div class="product-number">
-    02
+<div class="process-num">
+STEP 02
 </div>
 
 <h3>
-    Surface Cleaning Machines
+Discussion
 </h3>
 
-<ul>
-<li>Surface cleaning equipment</li>
-<li>Surface preparation</li>
-<li>Pre-treatment solutions</li>
-<li>Industrial cleaning systems</li>
-</ul>
+<p>
+Discuss process, capacity, layout and equipment requirements.
+</p>
 
 </div>
 
 
-<div class="product">
+<div class="process">
 
-<div class="product-number">
-    03
+<div class="process-num">
+STEP 03
 </div>
 
 <h3>
-    Material Handling Conveyors
+Solution
 </h3>
 
-<ul>
-<li>Overhead conveyors</li>
-<li>Floor conveyors</li>
-<li>Belt conveyor systems</li>
-<li>Industrial material handling</li>
-</ul>
+<p>
+Recommend a suitable industrial solution.
+</p>
 
 </div>
 
 
-<div class="product">
+<div class="process">
 
-<div class="product-number">
-    04
+<div class="process-num">
+STEP 04
 </div>
 
 <h3>
-    Painting Equipment
+Execution
 </h3>
 
-<ul>
-<li>Industrial painting equipment</li>
-<li>Paint booth related systems</li>
-<li>Liquid painting solutions</li>
-<li>Coating accessories</li>
-</ul>
+<p>
+Coordinate equipment and implementation requirements.
+</p>
 
 </div>
 
 
-<div class="product">
+<div class="process">
 
-<div class="product-number">
-    05
+<div class="process-num">
+STEP 05
 </div>
 
 <h3>
-    Curing & Heating Systems
+Support
 </h3>
 
-<ul>
-<li>Industrial curing ovens</li>
-<li>Heating systems</li>
-<li>Drying equipment</li>
-<li>Temperature controlled systems</li>
-</ul>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-number">
-    06
-</div>
-
-<h3>
-    Machine Maintenance
-</h3>
-
-<ul>
-<li>Machine maintenance</li>
-<li>Repair services</li>
-<li>Maintenance support</li>
-<li>Machine servicing</li>
-</ul>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-number">
-    07
-</div>
-
-<h3>
-    Electrical Goods
-</h3>
-
-<ul>
-<li>Industrial electrical items</li>
-<li>Control components</li>
-<li>Wiring requirements</li>
-<li>Machine electrical goods</li>
-</ul>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-number">
-    08
-</div>
-
-<h3>
-    Industrial Hardware
-</h3>
-
-<ul>
-<li>Industrial hardware</li>
-<li>Machine components</li>
-<li>Plant requirements</li>
-<li>General hardware goods</li>
-</ul>
-
-</div>
-
-
-<div class="product">
-
-<div class="product-number">
-    09
-</div>
-
-<h3>
-    Customized Solutions
-</h3>
-
-<ul>
-<li>Customized machinery</li>
-<li>Application specific solutions</li>
-<li>Material handling integration</li>
-<li>Industrial project requirements</li>
-</ul>
+<p>
+Provide assistance after delivery and installation as applicable.
+</p>
 
 </div>
 
@@ -1174,143 +1869,58 @@ footer{
 </section>
 
 
-<!-- ================= TESTING ================= -->
+<!-- CTA -->
 
-<section id="testing" class="section light">
+<section class="cta">
 
-<div class="container">
+<div class="container cta-inner">
 
-<div class="section-title">
-
-<div class="kicker">
-    Testing Equipment
-</div>
+<div>
 
 <h2>
-    Quality & Performance
+Looking For The Right Industrial Solution?
 </h2>
 
 <p>
-    Proper equipment selection and performance are important
-    for achieving consistent industrial finishing results.
+Tell us about your requirement and connect with KB Enterprises.
 </p>
 
 </div>
 
 
-<div class="strength-two">
+<a
+class="btn"
+href="https://wa.me/918858787771"
+target="_blank">
 
-<div class="strength-box">
+Chat On WhatsApp
 
-<h3>
-    Surface Finishing
-</h3>
-
-<p>
-    Solutions for surface preparation, powder coating,
-    liquid painting and industrial finishing applications.
-</p>
-
-</div>
-
-
-<div class="strength-box">
-
-<h3>
-    Industrial Reliability
-</h3>
-
-<p>
-    Equipment and maintenance solutions designed around
-    practical industrial production requirements.
-</p>
-
-</div>
-
-</div>
+</a>
 
 </div>
 
 </section>
 
 
-<!-- ================= OUR STRENGTH ================= -->
+<!-- CONTACT -->
 
-<section class="section">
-
-<div class="container">
-
-<div class="section-title">
-
-<div class="kicker">
-    Our Strength
-</div>
-
-<h2>
-    From Requirement To Solution
-</h2>
-
-</div>
-
-
-<div class="strength-two">
-
-<div class="strength-box">
-
-<h3>
-    Machine & Plant Solutions
-</h3>
-
-<p>
-    We understand industrial requirements and provide
-    suitable equipment and related solutions with a focus
-    on functionality, reliability and practical operation.
-</p>
-
-</div>
-
-
-<div class="strength-box">
-
-<h3>
-    Service & Support
-</h3>
-
-<p>
-    Our services include machine maintenance and related
-    industrial support to help customers maintain dependable
-    plant and equipment operation.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="section contact">
+<section class="contact" id="contact">
 
 <div class="container">
 
-<div class="section-title">
+<div class="section-head">
 
-<div class="kicker">
-    Contact Us
+<div class="eyebrow">
+CONTACT US
 </div>
 
 <h2>
-    Let's Discuss Your Requirement
+Get In Touch With KB Enterprises
 </h2>
 
 <p>
-    Contact KB Enterprises for powder coating machines,
-    conveyors, surface finishing equipment, maintenance
-    and industrial goods.
+For product enquiries, industrial requirements and solution
+discussions, contact us directly.
 </p>
 
 </div>
@@ -1319,97 +1929,166 @@ footer{
 <div class="contact-grid">
 
 
+<!-- CONTACT DETAILS -->
+
 <div class="contact-card">
 
 <h3>
-    KB Enterprises
+KB Enterprises
 </h3>
 
+
 <div class="contact-item">
 
+<div class="icon">
+⌖
+</div>
+
+<div>
+
 <strong>
-    📍 Address
+ADDRESS
 </strong>
 
-Plot No. B-6, Behind Satyam Auto Component,<br>
-Kohara to Machiwada Road, Vill. Mangarh,<br>
-Kohara, Ludhiana - 141112,<br>
-Punjab, India
+<span>
+Plot No. B-6, Behind Satyam Auto Component,
+Kohara to Machiwada Road, Vill. Mangarh,
+Kohara, Ludhiana - 141112, Punjab, India
+</span>
+
+</div>
 
 </div>
 
 
 <div class="contact-item">
 
+<div class="icon">
+☎
+</div>
+
+<div>
+
 <strong>
-    📞 Mobile
+CALL US
 </strong>
 
-<a href="tel:+91885878771">
-    +91 88587 87771
+<a href="tel:+918858787771">
++91 88587 87771
 </a>
 
 </div>
 
+</div>
+
 
 <div class="contact-item">
 
+<div class="icon">
+◉
+</div>
+
+<div>
+
 <strong>
-    💬 WhatsApp
+WHATSAPP
 </strong>
 
-<a href="https://wa.me/91885878771" target="_blank">
-    +91 88587 87771
+<a
+href="https://wa.me/918858787771"
+target="_blank">
+
++91 88587 87771
+
 </a>
+
+</div>
 
 </div>
 
 
 <div class="contact-item">
 
+<div class="icon">
+✉
+</div>
+
+<div>
+
 <strong>
-    ✉️ Email
+EMAIL
 </strong>
 
 <a href="mailto:kbenterpries_13@outlook.com">
-    kbenterpries_13@outlook.com
+
+kbenterpries_13@outlook.com
+
 </a>
 
 </div>
 
 </div>
 
+
+</div>
+
+
+<!-- CONTACT FORM -->
 
 <div class="contact-card">
 
 <h3>
-    Get In Touch
+Send An Enquiry
 </h3>
 
-<p class="contact-item">
-    Looking for powder coating machines,
-    surface cleaning equipment, conveyors,
-    painting systems or machine maintenance?
-</p>
 
-<br>
+<form
+class="contact-form"
+onsubmit="sendWhatsApp(event)">
 
-<a
-href="https://wa.me/91885878771?text=Hello%20KB%20Enterprises%2C%20I%20am%20interested%20in%20your%20industrial%20solutions."
-target="_blank"
-class="btn">
 
-WhatsApp Us
+<input
+id="name"
+type="text"
+placeholder="Your Name"
+required>
 
-</a>
 
-<a
-href="mailto:kbenterpries_13@outlook.com?subject=KB%20Enterprises%20Enquiry"
-class="btn dark">
+<input
+id="phone"
+type="tel"
+placeholder="Phone Number"
+required>
 
-Email Us
 
-</a>
+<input
+id="email"
+type="email"
+placeholder="Email Address">
+
+
+<input
+id="product"
+type="text"
+placeholder="Product / Requirement">
+
+
+<textarea
+id="message"
+placeholder="Tell us about your requirement">
+</textarea>
+
+
+<button
+class="btn btn-red full"
+type="submit">
+
+Send Enquiry On WhatsApp
+
+</button>
+
+
+</form>
 
 </div>
 
@@ -1420,48 +2099,161 @@ Email Us
 
 </section>
 
+</main>
 
-<!-- ================= FOOTER ================= -->
-
+</section>
+<!-- FOOTER -->
 <footer>
+  <div class="footer-wrap">
 
-<div class="container footer">
+    <div class="footer-col">
+      <h3>KB ENTERPRISES</h3>
+      <p>
+        KB Enterprises provides industrial solutions for surface coating,
+        powder coating, painting, surface preparation and material handling
+        applications with a focus on quality, reliability and customer
+        requirements.
+      </p>
+    </div>
 
-<div>
-    © 2026 KB Enterprises. All Rights Reserved.
-</div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#top">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#businesses">Businesses</a>
+      <a href="#products">Product Range</a>
+      <a href="#strength">Our Strength</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-<div>
-    Surface Coating • Conveyors • Maintenance • Industrial Solutions
-</div>
+    <div class="footer-col">
+      <h4>Product Range</h4>
+      <a href="#products">Powder Coating Machines</a>
+      <a href="#products">Pre-Treatment Systems</a>
+      <a href="#products">Painting Equipment</a>
+      <a href="#products">Conveyors</a>
+      <a href="#products">Material Handling</a>
+      <a href="#products">Industrial Accessories</a>
+    </div>
 
-</div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <p>📞 +91 88587 87771</p>
+      <p>✉ kbenterpries_13@outlook.com</p>
+      <p>📍 Ludhiana, Punjab, India</p>
 
+      <a
+        class="footer-wa"
+        href="https://wa.me/918858787771"
+        target="_blank"
+      >
+        WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 KB Enterprises. All Rights Reserved.</p>
+    <p>Surface Coating • Painting • Material Handling</p>
+  </div>
 </footer>
 
 
-<!-- ================= FLOATING BUTTONS ================= -->
+<!-- FLOATING BUTTONS -->
+
+<a class="top" href="#top" aria-label="Back to top">
+  ↑
+</a>
 
 <a
-class="whatsapp"
-href="https://wa.me/91885878771"
-target="_blank"
-aria-label="WhatsApp">
-
-☎
-
+  class="whatsapp"
+  href="https://wa.me/918858787771"
+  target="_blank"
+  aria-label="WhatsApp"
+>
+  <span>WA</span>
 </a>
 
 
-<a
-class="top"
-href="#home"
-aria-label="Back to top">
+<!-- JAVASCRIPT -->
+<script>
 
-↑
+  /* MOBILE MENU */
 
-</a>
+  const menuBtn = document.querySelector(".menu-btn");
+  const nav = document.querySelector("nav");
 
+  if (menuBtn) {
+    menuBtn.addEventListener("click", function () {
+      nav.classList.toggle("active");
+    });
+  }
+
+  document.querySelectorAll("nav a").forEach(function(link) {
+    link.addEventListener("click", function() {
+      nav.classList.remove("active");
+    });
+  });
+
+
+  /* WHATSAPP ENQUIRY FORM */
+
+  function sendWhatsApp(e) {
+
+    e.preventDefault();
+
+    const name =
+      document.getElementById("name")?.value.trim() || "";
+
+    const phone =
+      document.getElementById("phone")?.value.trim() || "";
+
+    const email =
+      document.getElementById("email")?.value.trim() || "";
+
+    const product =
+      document.getElementById("product")?.value.trim() || "";
+
+    const message =
+      document.getElementById("message")?.value.trim() || "";
+
+
+    const text = `Hello KB Enterprises,
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email}
+Product/Requirement: ${product}
+
+Message:
+${message}`;
+
+
+    const whatsappURL =
+      "https://wa.me/918858787771?text=" +
+      encodeURIComponent(text);
+
+
+    window.open(whatsappURL, "_blank");
+  }
+
+
+  /* BACK TO TOP BUTTON */
+
+  window.addEventListener("scroll", function() {
+
+    const topButton = document.querySelector(".top");
+
+    if (window.scrollY > 400) {
+      topButton.classList.add("show");
+    } else {
+      topButton.classList.remove("show");
+    }
+
+  });
+
+</script>
 
 </body>
 </html>
